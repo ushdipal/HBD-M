@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Selamat Ulang Tahun, Mama</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Segoe UI", sans-serif;
+      overflow: hidden;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 40px 30px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+      animation: fadeIn 2s ease;
+      max-width: 350px;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2em;
+      animation: glow 1.5s infinite alternate;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      animation: slideUp 2s ease;
+    }
+
+    .name {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #fff3b0;
+      margin-top: 20px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px white; }
+      to   { text-shadow: 0 0 20px #fff; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(25px); opacity: 0; }
+      to   { transform: translateY(0); opacity: 1; }
+    }
+
+    .flower {
+      position: absolute;
+      bottom: -60px;
+      font-size: 35px;
+      animation: float 9s linear infinite;
+    }
+
+    .f1 { left: 15%; animation-delay: 0s; }
+    .f2 { left: 50%; animation-delay: 3s; }
+    .f3 { left: 80%; animation-delay: 6s; }
+
+    @keyframes float {
+      from { transform: translateY(0); opacity: 1; }
+      to { transform: translateY(-120vh); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="flower f1">🌷</div>
+  <div class="flower f2">🌸</div>
+  <div class="flower f3">🌹</div>
+
+  <div class="card">
+    <h1>💐 Selamat Ulang Tahun, Mama 💐</h1>
+    <p>
+      Terima kasih atas semua kasih sayang, doa, dan pengorbanan yang tak pernah habis.
+      Semoga Mama selalu diberikan kesehatan, kebahagiaan, dan umur yang panjang.
+    </p>
+    <div class="name">Dengan cinta, dari anakmu ❤️</div>
+  </div>
+
+</body>
+</html>
